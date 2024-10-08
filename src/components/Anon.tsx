@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
-import useAuthContext from "../hooks/useAuthContext";
 import { Navigate } from "react-router-dom";
+import useAuthContext from "../hooks/useAuthContext";
 
 function Anon({ children }: { children: ReactNode }) {
   const { loading, user } = useAuthContext();

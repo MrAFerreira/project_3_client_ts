@@ -1,6 +1,7 @@
 import { useState, useEffect, createContext } from "react";
 import axios, { AxiosResponse } from "axios";
 import projectsService from "../services/projects.api";
+
 import { AuthContextType, User } from "../types";
 
 const AuthContext = createContext<AuthContextType | null>(null);

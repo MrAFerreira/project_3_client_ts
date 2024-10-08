@@ -7,6 +7,7 @@ import {
 } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import projectsService from "../../services/projects.api";
+
 import { Project, ProjectEdit } from "../../types";
 
 function EditProject() {

@@ -1,6 +1,7 @@
 import { ChangeEvent, FormEvent, useState } from "react";
-import { TaskCreation } from "../types";
 import projectsService from "../services/projects.api";
+
+import { TaskCreation } from "../types";
 
 interface AddTaskProps {
   projectId: string;

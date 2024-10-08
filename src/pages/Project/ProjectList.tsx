@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import ProjectCard from "../../components/ProjectCard";
 import projectsService from "../../services/projects.api";
+
 import { Project } from "../../types";
 
 function ProjectList() {

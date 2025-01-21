@@ -5,28 +5,28 @@ function Navbar() {
   const { user, loading, logout } = useAuthContext();
 
   return (
-    <nav>
-      <p>{user ? user.username : "Hello"}</p>
-      {user && <img src={user.profilePic} />}
-      <ul>
+    <nav className="bg-white shadow-md p-4">
+      <p className="text-lg font-semibold">{user ? user.username : "Hello"}</p>
+      {user && <img className="w-10 h-10 rounded-full" src={user.profilePic} />}
+      <ul className="flex space-x-4">
         <Link to="/">
-          <button>Home</button>
+          <button className="text-blue-500 hover:text-blue-700">Home</button>
         </Link>
 
         {!loading && user ? (
           <>
             <Link to="/projects">
-              <button>Projects</button>
+              <button className="text-blue-500 hover:text-blue-700">Projects</button>
             </Link>
-            <button onClick={logout}>Logout</button>
+            <button className="text-blue-500 hover:text-blue-700" onClick={logout}>Logout</button>
           </>
         ) : (
           <>
             <Link to="/signup">
-              <button>Signup</button>
+              <button className="text-blue-500 hover:text-blue-700">Signup</button>
             </Link>
             <Link to="/login">
-              <button>Login</button>
+              <button className="text-blue-500 hover:text-blue-700">Login</button>
             </Link>
           </>
         )}

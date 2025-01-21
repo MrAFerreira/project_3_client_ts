@@ -13,7 +13,7 @@ import Private from "./components/Private";
 
 function App() {
   return (
-    <div>
+    <div className="min-h-screen bg-gray-100">
       <Navbar />
       <Routes>
         <Route
